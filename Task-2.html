@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> College Survey </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+
+<body>
+	<h1 class="text-primary text-center"> College Survey Form </h1>
+	<hr>
+	<div style="margin-left:10%; margin-right:10%">
+	<form>
+		<div>
+			<h3 class="text-info text-center"> Personal Details </h3>
+			<hr>
+			<table align="center" width="80%">
+				<tr>
+					<td align="right" class="p-2">Name:</td>
+					<td><input type="text"/></td>
+					<td align="right" class="p-2">Address Line 1:</td>
+					<td><input type="text"/></td>
+				</tr>
+				<tr>
+					<td align="right" class="p-2">DOB:</td>
+					<td><input type="date"/></td>
+					<td align="right" class="p-2">Address Line 2:</td>
+					<td><input type="text"/></td>
+				</tr>
+				<tr>
+					<td align="right"class="p-2">Email:</td>
+					<td><input type="text"></td>
+					<td align="right" class="p-2">City:</td>
+					<td><input type="text"/></td>
+				</tr>
+				<tr>
+					<td align="right" class="p-2">Mobile:</td>
+					<td><input type="text"></td>
+					<td align="right" class="p-2">State:</td>
+					<td><input type="text"/></td>
+				</tr>
+			</table>
+		</div>
+		<div class="text-center">
+			<h3 class="text-info text-center"> Academic Details </h2>
+			<hr>
+			<div>
+				<lable class="p-2">College Name: </lable><input type="text" width="100%"/> <br/>
+				<label class="p-2">Year:</label>
+				<span>
+					<input type="radio" id="First" name="year" value="First"> First </input> 
+					<input type="radio" id="Second" name="year" value="Second"> Second </input>
+					<input type="radio" id="Third" name="year" value="Third"> Third </input>
+					<input type="radio" id="Forth" name="year" value="Forth"> Forth </input>
+				</span> <br/>
+				<label>Semester:</label> 
+				<span>
+					<input type="radio" id="Odd" name="semester" value="Odd"/> ODD </input>
+					<input type="radio" id="Even" name="semester" value="Even"/> EVEN </input>
+				</span>					
+			</div>
+		</div>
+		<div class="text-center">
+			<h2 class="text-info text-center"> Feedback Questions </h3>
+			<hr> 
+			<div>
+				<h5 class="text-success">Teaching Staff Feedback</h3>
+				<div id="question-div" style="Padding-left:5%">
+					<h6 class="font-weight-bold text-secondary"> How was Teaching Experience?</h6>
+					<span>
+						<input type="radio" id="exp1" name="experience_teaching" value="1"> Very Bad </input> <br/>
+						<input type="radio" id="exp2" name="experience_teaching" value="2"> Bad </input> <br/>
+						<input type="radio" id="exp3" name="experience_teaching" value="3"> Average </input> <br/>
+						<input type="radio" id="exp4" name="experience_teaching" value="4"> Good </input> <br/>
+						<input type="radio" id="exp5" name="experience_teaching" value="5"> Very Good </input>
+					</span> <br/>
+					<h6 class="font-weight-bold text-secondary">How much Syllabus was covered during last Semester?</h6> 
+					<span>
+						<input type="radio" id="syll1" name="syllabus" value="3"> 0 - 30%</input> <br/>
+						<input type="radio" id="syll2" name="syllabus" value="6"> 30% - 60% </input> <br/>
+						<input type="radio" id="syll3" name="syllabus" value="8"> 60% - 80% </input> <br/>
+						<input type="radio" id="syll4" name="syllabus" value="10"> 80% - 100% </input>
+					</span> <br/>				
+					<h6 class="font-weight-bold text-secondary"> How was the Punctuality of Teachers? </h6> 
+					<span>
+						<input type="radio" id="punc1" name="punctuality" value="1"> Always Early</input> <br/>
+						<input type="radio" id="punc2" name="punctuality" value="2"> On Time </input> <br/>
+						<input type="radio" id="pucn3" name="punctuality" value="3"> Occasionally Late </input> <br/>
+						<input type="radio" id="punc4" name="punctuality" value="4"> Always Late</input>
+					</span> <br/>	
+				</div>
+			</div>
+			
+			<div>
+				<h5 class="text-success">Labaratory Feedback </h3>
+				<div id="question-div" style="Padding-left:5%">
+					<h6 class="font-weight-bold text-secondary"> Was lab equipments are sufficient for all students ? <h6>
+					<span>
+						<input type="radio" id="equip1" name="Equipment" value="0"> Yes </input> 
+						<input type="radio" id="equip2" name="Equipment" value="1"> No </input>
+					</span> <br/>
+					<h6 class="font-weight-bold text-secondary"> How was the cleanliness in lab?</h6> 
+					<span>
+						<input type="radio" id="clean1" name="Cleanliness" value="1">  Very Bad </input> <br/>
+						<input type="radio" id="clean2" name="Cleanliness" value="2"> Bad </input> <br/>
+						<input type="radio" id="clean3 name="Cleanliness" value="3"> Average </input> <br/>
+						<input type="radio" id="clean4" name="Cleanliness" value="4"> Good </input> <br/>
+						<input type="radio" id="clean5" name="Cleanliness" value="5"> Very Good </input>
+					</span> <br/>				
+				</div>
+			</div>
+
+			<div>
+				<h5 class="text-success"> Classroom Feedback</h3>
+				<div id="question-div" style="Padding-left:5%">
+					<h6 class="font-weight-bold text-secondary"> Was your classroom well maintained ? <h6>
+					<span>
+						<input type="radio" id="main1" name="Maintain" value="0"> Yes </input> 
+						<input type="radio" id="main2" name="Maintain" value="1"> No </input>
+					</span> <br/>
+					<h6 class="font-weight-bold text-secondary"> Bench in classroom sufficient for all students ? :</h6> 
+					<span>
+						<input type="radio" id="bench1" name="bench" value="0"> Yes </input> 
+						<input type="radio" id="bench2" name="bench" value="1"> No </input>
+					</span> <br/>
+					<h6 class="font-weight-bold text-secondary"> How was the cleanliness in lab?</h6> 
+					<span>
+						<input type="radio" id="clean1" name="Cleanliness" value="1">  Very Bad </input> <br/>
+						<input type="radio" id="clean2" name="Cleanliness" value="2"> Bad </input> <br/>
+						<input type="radio" id="clean3 name="Cleanliness" value="3"> Average </input> <br/>
+						<input type="radio" id="clean4" name="Cleanliness" value="4"> Good </input> <br/>
+						<input type="radio" id="clean5" name="Cleanliness" value="5"> Very Good </input>
+					</span> <br/>
+				</div>
+			</div>
+		</div>
+		<hr>
+        	<div class="text-center">
+          		<h3 class="text-info text-center"> Additional Feedback (If Any)</h4>
+          		<textarea 
+				id="addtional_feedback" name="addtional_feedback" rows="4" cols="50" 
+				style="padding:2px;">
+			</textarea>
+        	</div>
+	  	<br/>
+        	<div   align="center">
+          		<button type="submit"class="btn btn-success"> Submit </button>
+          		<button type="reset" class="btn btn-secondary"> Clear </button>
+        	</div>
+		<br/><br/><br/>
+	</form>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
